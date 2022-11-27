@@ -47,4 +47,22 @@ public class Day {
             meetings[hour] = null;
         }
     }
+
+    /**
+     * Finds the meeting by the hour given as long one has been created for that hour
+     * @param hour the hour of the meeting you're looking for
+     * @return Returns the meeting that is located at that hour
+     */
+    public Meeting getMeeting(int hour) throws HourOutofRange, NoMeetingExistsAtThisTime {
+        if(hour>23 || hour<0){
+            throw new HourOutofRange();
+        }
+        if(meetings[hour] == null){
+            throw new NoMeetingExistsAtThisTime(hour);
+        }
+
+        return meetings[hour];
+
+
+    }
 }
