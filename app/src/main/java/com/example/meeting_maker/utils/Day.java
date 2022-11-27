@@ -1,4 +1,8 @@
-package com.example.meeting_maker;
+package com.example.meeting_maker.utils;
+
+import com.example.meeting_maker.utils.HourOutofRange;
+import com.example.meeting_maker.utils.MeetingExistsAtThisTime;
+import com.example.meeting_maker.utils.NoMeetingExistsAtThisTime;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.example.meeting_maker;
+package com.example.meeting_maker.utils;
 
 import java.util.Date;
 
