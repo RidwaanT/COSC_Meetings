@@ -6,4 +6,8 @@ public class NoMeetingExistsAtThisTime extends Exception {
     public NoMeetingExistsAtThisTime(Date date, int hour) {
         super("There is no meetings for: " + date + " " + hour);
     }
+
+    public NoMeetingExistsAtThisTime(int hour) {
+        super("There is no meetings for: " + hour);
+    }
 }
